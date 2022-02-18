@@ -1,0 +1,19 @@
+/*Java Program to check whether a number is even or odd*/
+import java.util.Scanner;
+
+public class Main
+{
+  public static void main(String args[])
+  {
+    //To take input from the user 
+    //Create an object of scanner class
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a number: ");
+    int num = sc.nextInt();
+    //Use Ternary Operator to check
+    String check = (num % 2 == 0) ? "even" : "odd";
+
+    System.out.println("The entered number "+ num + " is: " + check);
+    
+  }
+}
